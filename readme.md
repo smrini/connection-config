@@ -1,6 +1,6 @@
 # connection-config
 
-This repo is used to host configuration files that fix the connection issues of Terminal on Ubuntu machines at my school with Proxy. Don't use it unless you are from my school almata.cat.
+This repo is used to host configuration files that fix the Terminal connection issues of Ubuntu machines at my school with Proxy. Don't use it unless you are from my school almata.cat
 
 ## Usage
 
