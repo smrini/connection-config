@@ -1,14 +1,10 @@
 # connection-config
 
-This repo is used to host configuration files that fix the Terminal connection issues of Ubuntu machines at my school with Proxy. Don't use it unless you are from my school almata.cat
+This folder contains a script to remove proxy settings that were previously configured by the Proxy-ON script.
 
 ## Usage
 
-If you have a similar problem, modify the files (`environment` and `apt.conf`) to suit the proxy host used by your organization before executing the patch.
-
-### Running the patch
-
-To run the patch, follow these steps:
+To remove the proxy configuration for the terminal, ensure you are in the Proxy-OFF directory, then:
 
 1. Change the permissions on the file named `script.sh` using the command:
 ```bash
@@ -21,6 +17,21 @@ sudo ./script.sh
 ```
 
 **Note:** You must be in the same directory as the script first; in other words, you have to be inside the downloaded folder where the patch files are located.
+
+## What the Script Does
+
+The script removes or resets proxy-related settings from:
+- System environment variables in `/etc/environment`
+- APT package manager configuration in `/etc/apt/apt.conf`
+
+This effectively returns your Ubuntu system to its default network configuration without proxy settings.
+
+## When to Use
+
+Use this script when:
+- You no longer need to use the school's proxy
+- You're connecting to a different network
+- You're experiencing issues with the proxy configuration and need to reset it
 
 ### Manual Configuration
 
