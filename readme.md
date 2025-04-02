@@ -1,21 +1,43 @@
 # connection-config
 
-This repo is used to host configuration files that fix the Terminal connection issues of Ubuntu machines at my school with Proxy. Don't use it unless you are from my school almata.cat
+This repository contains configuration files that fix the Terminal connection issues with the Proxy on Ubuntu machines at my school. 
+Don't use it unless you are from my school almata.cat
+
+## Repository Structure
+
+- **Proxy-ON/**: Contains files to set up the proxy connection
+- **Proxy-OFF/**: Contains files to remove the proxy configuration
 
 ## Usage
 
 If you have a similar problem, modify the files (`environment` and `apt.conf`) to suit the proxy host used by your organization before executing the patch.
 
-### Running the patch
-
-To run the patch, follow these steps:
-
-1. Change the permissions on the file named `script.sh` using the command:
+### Setting up the proxy connection
+To set up the proxy connection, follow these steps:
+1. Navigate to the Proxy-ON folder:
+```bash
+cd Proxy-ON
+```
+2. Change the permissions on the file named `script.sh` using the command:
 ```bash
 chmod 777 script.sh
 ```
+3. Execute the file with sudo privileges:
+```bash
+sudo ./script.sh
+```
 
-2. Execute the file with sudo privileges:
+### Removing the proxy configuration
+If you need to remove the proxy settings:
+1. Navigate to the Proxy-OFF folder:
+```bash
+cd Proxy-OFF
+```
+2. Change the permissions on the file named `script.sh` using the command:
+```bash
+chmod 777 script.sh
+```
+3. Execute the removal script with sudo privileges:
 ```bash
 sudo ./script.sh
 ```
